@@ -2,6 +2,10 @@ import React from 'react';
 
 import { TimePicker } from '../../../index';
 
+Demo.parameters = {
+    chromatic: { disableSnapshot: true },
+}
+
 export default function Demo() {
     const createLog = (event, cb) => {
         return function log(...args) {

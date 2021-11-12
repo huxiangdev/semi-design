@@ -17,15 +17,10 @@ on:
       - '!packages/**/*.test.[tj]sx?'
       - '!packages/**/*.md'
   push:
-    branches: [ main, release, test-chromatic ]
+    branches: [ test-chromatic ]
     paths:
       - 'packages/**/*.[tj]sx?'
       - 'packages/**/*.scss'
-      - '!packages/**/_story/**'
-      - '!packages/**/__test__/**'
-      - '!packages/**/*.stories.[tj]sx?'
-      - '!packages/**/*.story.[tj]sx?'
-      - '!packages/**/*.test.[tj]sx?'
       - '!packages/**/*.md'
 
 # List of jobs

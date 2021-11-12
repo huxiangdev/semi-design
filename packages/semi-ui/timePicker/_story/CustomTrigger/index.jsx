@@ -3,6 +3,10 @@ import * as dateFns from 'date-fns';
 
 import { TimePicker, Button, Icon } from '../../../index';
 
+Demo.parameters = {
+    chromatic: { disableSnapshot: true },
+}
+
 export default function Demo() {
     const formatToken = 'HH:mm:ss';
     const [time, setTime] = useState(new Date());
